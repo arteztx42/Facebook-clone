@@ -1,0 +1,24 @@
+0. what is Angular/Why Angular/Why not any other library or framework (Vue,React,Jquery)!!!
+1. SPA in Angular ?
+2. you create a service/comp/module/directive/pipes in Angular
+3. what are module? comp ?directive ? pipes ?service?
+4. Lifecycle hooks     <--------->
+
+<a-comp></a-comp>                       onInit or onChanges
+<b-comp [name]="'Sugam'" ></a-comp>     onInit or onChanges
+
+
+5. How you share data between Angular components ? <--------->
+ Parent to Child , -> []
+ Child to Parent, ->   ()
+ Unrelated Components/Siblings -> service
+
+6. data binding ? <--------->
+Event binding/one way binding    ()
+Property binding/one way binding     []
+String interpolation {{}}
+Two-way data binding   [()]
+
+
+7.
+

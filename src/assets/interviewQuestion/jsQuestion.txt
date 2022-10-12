@@ -95,3 +95,81 @@ console.log( "A" - "B" + "2");
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
+
+1. = & == & ===
+  a = 1;
+  b = "1";
+    console.log(a == b) // true
+    console.log(a === b) // false
+  a = b;
+    console.log(a == b) // true
+    console.log(a === b) // true
+
+
+2. function testFunc() {
+    var obj = {name:"Raman", age:20};
+
+    return function() {
+      console.log(obj.name + " is "+obj.age +" years old")
+    };
+  }
+
+console.log(testFunc)
+
+3.
+
+  function varVsLetFunction(){
+    let awesomeCar1 = "Audi";
+    var awesomeCar2 = "Mercedes";
+  }
+
+  console.log(awesomeCar1); //audi
+  console.log(awesomeCar2); //undefined
+
+
+
+
+
+4. function func1() {
+  setTimeout(() => {
+    console.log(x);
+    console.log(y);
+  },5000);
+
+  var x = 2;
+  var y = 11;
+  };
+  func1();
+
+
+5. function func2() {
+  setTimeout(() => {
+    console.log(x);
+    console.log(y);
+  },5000);
+
+  var x = 2;
+  let y = 11;
+  };
+  func2();
+
+
+6.  function func1() {
+  for(var i = 0; i < 3; i++){
+    setTimeout(()=> console.log(i),2000);
+    }
+  };
+  func1();
+
+
+7.  (function(){
+  setTimeout(()=> console.log(1),2000);
+  console.log(2);
+  setTimeout(()=> console.log(3),0);
+  console.log(4);
+})();
+
+
+
+8.
+

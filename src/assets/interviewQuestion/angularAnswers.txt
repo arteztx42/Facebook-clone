@@ -1,0 +1,2 @@
+0.
+Angular is SPA , it has comps, moules
