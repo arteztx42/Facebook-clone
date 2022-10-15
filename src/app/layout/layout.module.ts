@@ -15,6 +15,7 @@ const routes:Routes =[
   children: [
   {path:'posting', component:PostingComponent},
   {path:'friends', component:FriendsComponent},
+  {path:"**", pathMatch:"full", redirectTo:"posting"}
   ]
 
 
