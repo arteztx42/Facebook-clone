@@ -1,2 +1,67 @@
 0.
 Angular is SPA , it has comps, moules
+Angular is an open-source, JavaScript framework written in TypeScript
+ Google maintains it, and its primary purpose is to develop 
+ single-page applications. As a framework, Angular has clear 
+ advantages while also providing a standard structure for developers
+  to work with.
+
+
+1.Single Page Applications are web applications that load a single
+ HTML page and only a part of the page instead of the entire page
+  gets updated with every click of the mouse. The page does not 
+  reload or transfer control to another page during the process.
+   This ensures high performance and loading pages faster. it loads 
+and switches out visual componenets and elements on the single page
+
+2. how to create ang elements.... ng g c, ng g m, ng g s, ng g d,
+
+3. module is... n Angular, a module is a mechanism to group
+ components, directives, pipes and services that are related, in 
+ such a way that can be combined with other modules to create an
+  application. An Angular application can be thought of as a puzzle 
+  where each piece (or each module) is needed to be able to see the 
+  full picture.
+
+  compoonent is....Angular components are a subset of directives,
+   always associated with a template. Unlike other directives, only
+    one component can be instantiated for a given element in a 
+    template. A component must belong to an NgModule in order for it
+     to be available to another component or application.
+
+Pipes are simple functions to use in template expressions to accept 
+an input value and return a transformed value. Pipes are useful 
+because you can use them throughout your application, while only
+ declaring each pipe once.
+
+What is meant by directives in Angular? Directives are classes that
+ add new behavior or modify the existing behavior to the elements in
+  the template. Basically directives are used to manipulate the DOM,
+   for example adding/removing the element from DOM or changing the
+    appearance of the DOM elements.
+
+What Are Angular Services? Angular services are objects that get
+ instantiated just once during the lifetime of an application. They 
+ contain methods that maintain data throughout the life of an
+  application, i.e., data is available all the time.
+
+
+  4.Lifecycle hooks are a special functionality in Angular that allow us
+ to “hook into” and run code at a specific lifecycle event of a 
+ component or directive. Angular manages components and directives 
+ for us when it creates them, updates them, or destroys them.
+
+OnChanges	Called when the input properties have changed
+OnInit	Called on initialization
+DoCheck	Developer’s custom change detection
+OnDestroy	Called before the component is destroyed
+AfterContentInit	Called when the component’s content ngContent is initialized
+AfterContentChecked	Called when the component’s content is updated or checked for updates
+AfterViewInit	Called when the component’s projected view has been initialized
+AfterViewChecked	Called after the projected view has been checked
+
+
+5. Parent to Child , -> []  input..
+ Child to Parent, ->   ()   output.... 
+ Unrelated Components/Siblings -> service
+

@@ -21,4 +21,20 @@ Two-way data binding   [()]
 
 
 7.
+Lifecycle hooks are a special functionality in Angular that allow us
+ to “hook into” and run code at a specific lifecycle event of a 
+ component or directive. Angular manages components and directives 
+ for us when it creates them, updates them, or destroys them.
+
+OnChanges	Called when the input properties have changed
+OnInit	Called on initialization
+DoCheck	Developer’s custom change detection
+OnDestroy	Called before the component is destroyed
+AfterContentInit	Called when the component’s content ngContent is initialized
+AfterContentChecked	Called when the component’s content is updated or checked for updates
+AfterViewInit	Called when the component’s projected view has been initialized
+AfterViewChecked	Called after the projected view has been checked
+
+
+
 
