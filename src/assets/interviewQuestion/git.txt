@@ -1,0 +1,13 @@
+Git commands
+
+Git pull  it will pull all changes from server to local....before pulling, you need to
+push all the local changes first... 
+
+Git add .    //this will add all files that i want to committed
+git commit -m" the message you want to push here" 
+git push     this will push the changes from local to th server 
+
+
+
+
+
