@@ -1,0 +1,9 @@
+1. add a guard for home page to login ;
+2. add other pages // check header
+3.
+  a. we need to add a post.json // contains all the static posts
+  b. need to list all the posts in the home pages using *ngFor using json data
+  c. you need to make a component for single post in the list view and you need to
+    c.1. send post data as input (for loops dat)
+    c.2 show data inside that single component using interpolation
+    // c.3 when ever user click like button --- >  send output to prent comp and increase the like cont
