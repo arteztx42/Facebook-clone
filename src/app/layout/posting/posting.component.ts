@@ -10,7 +10,9 @@ import { ApicallService } from 'src/app/utils/services/apicall.service';
 })
 export class PostingComponent implements OnInit {
 users:any=[]
-  constructor(private router: Router, private api: ApicallService) { 
+public name: string = "Ramandip Singhh";
+
+  constructor(private router: Router, private api: ApicallService) {
 
   }
 
