@@ -32,6 +32,8 @@
       opacity: .6;
       filter: alpha(opacity=60); /* For IE8 and earlier */
     border-radius: 25px;
+
+    
   }
   
   .twitter-icon:hover,
@@ -47,4 +49,5 @@
   
   .footer-nav p {
       text-align: center;
+      
   }

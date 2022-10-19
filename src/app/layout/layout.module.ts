@@ -6,6 +6,8 @@ import { FriendsComponent } from './friends/friends.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { PostingComponent } from './posting/posting.component';
+import { DetailedPostComponent } from './detailed-post/detailed-post.component';
+import { PhotosComponent } from './photos/photos.component';
 
 
 
@@ -32,7 +34,9 @@ const routes:Routes =[
     FriendsComponent,
     HeaderComponent,
     FooterComponent,
-    PostingComponent
+    PostingComponent,
+    DetailedPostComponent,
+    PhotosComponent
   ],
   imports: [
     CommonModule,
