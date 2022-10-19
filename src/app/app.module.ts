@@ -9,15 +9,16 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AuthGuardGuard } from './utils/guards/auth-guard.guard';
+import { SignoutGuard } from './utils/guards/signout.guard';
 
 const routes:Routes =[
   {path:'', redirectTo:'login', pathMatch: 'full'},
-  {path:'login', component:LoginComponent,canActivate:[]},
+  {path:'login', component:LoginComponent,canActivate:[SignoutGuard]},
   {path:'homepage', component:HomepageComponent,canActivate:[AuthGuardGuard]},
   // {path:'edit/:id', component:EdituserComponent},
   // // {path:'single', component:SingleuserComponent},
   // {path:'single/:id', component:SingleuserComponent},
-  {path:'layout', loadChildren: () => import('./layout/layout.module').then(a=>a.LayoutModule
+  {path:'layout', canActivate:[AuthGuardGuard], loadChildren: () => import('./layout/layout.module').then(a=>a.LayoutModule
   ) }
   ]
 

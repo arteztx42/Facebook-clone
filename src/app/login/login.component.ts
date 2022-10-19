@@ -25,9 +25,8 @@ export class LoginComponent implements OnInit {
     if (this.loginForm.valid){
       console.log(this.loginForm.value);
       localStorage.setItem("userData", JSON.stringify(this.loginForm.value))
-
+      localStorage.removeItem('signedout')
       this.router.navigateByUrl('/layout')
-      console.log('it works?')
     }
   }
   
