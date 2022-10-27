@@ -40,23 +40,23 @@
             <span>Photos</span>
             <div class="lb-action" id="b-i"><i class="material-icons"></i></div>
           </div>
-          <div id="photos">
-            <div class="tb">
-              <div class="tr">
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
+          <div id="photos"  class="boxes" >
+            <div class="tb" (click)="loadPhoto()">
+              <div class="tr" *ngFor="let user of users">
+                <div class="td" ><img src={{user.avatar}}></div>
+                <!-- <div class="td"><img src={{user.avatar}}></div>
+                <div class="td"><img src={{user.avatar}}></div> -->
               </div>
-              <div class="tr">
+              <!-- <div class="tr">
                 <div class="td"></div>
                 <div class="td"></div>
                 <div class="td"></div>
-              </div>
-              <div class="tr">
+              </div> -->
+              <!-- <div class="tr">
                 <div class="td"></div>
                 <div class="td"></div>
                 <div class="td"></div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -92,7 +92,7 @@
               <div class="tb" id="p-tabs-m">
                 <div class="td active"><i class="material-icons">Timeline</i><span></span></div>
                 <div class="td"><i class="material-icons">people</i><span></span></div>
-                <div class="td"><i class="material-icons">p</i><span></span></div>
+                <div class="td"><i class="material-icons">photos</i><span></span></div>
                 <div class="td"><i class="material-icons">explore</i><span></span></div>
                 <div class="td"><i class="material-icons">archive</i><span></span></div>
               </div>
@@ -134,24 +134,25 @@
               </div>
               <div class="td p-opt"><i class="material-icons"></i></div>
             </div>
-            <a href="#" class="p-cnt-v">
-              <img src="https://ramandip-singh.pixels.com/images/artistwebsiteimages/272559-105-1480470292.jpg">
-            </a>
-             <!-- <a href="#" class="p-cnt-v">
+            <!-- <a href="#" class="p-cnt-v">
               <img src="https://ramandip-singh.pixels.com/images/artistwebsiteimages/272559-105-1480470292.jpg">
             </a> -->
-           <!-- <div>
-            <tr *ngFor="let user of users">
-              <th style="font-size:25px" scope="row">{{user.id}}</th>
-            </tr>
-            </div> -->
+             <a href="#" class="p-cnt-v" *ngFor="let id of ids">
+              <p>How does this look?</p>
+              <img src="{{id}}">
+            </a>
           <div>
-            Let's see if this works {{users.id}}
 
-            <tr *ngFor="let user of users">
-              <th scope="row">{{user.id}}</th>
-              
-            </tr>
+            <!-- <tr *ngFor="let user of users">
+                <th style="font-size:25px" scope="row">{{user.id}}</th>
+                <td style="font-size:25px">{{user.first_name}}</td>
+                <td style="font-size:25px">{{user.last_name}}</td>
+                <td style="font-size:25px" >{{user.email}}</td>
+                <td><img  class="p-3 mb-2 bg-light text-dark" src="{{user.avatar}}"></td> 
+
+
+
+            </tr> -->
           </div>
             <div>
               <div class="p-acts">

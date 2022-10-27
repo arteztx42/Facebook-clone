@@ -1,0 +1,4 @@
+.boxes {
+column-count: 3;
+grid-auto-rows: auto;
+}

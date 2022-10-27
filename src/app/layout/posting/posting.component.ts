@@ -10,6 +10,7 @@ import { ApicallService } from 'src/app/utils/services/apicall.service';
 })
 export class PostingComponent implements OnInit {
 users:any=[]
+ids:any=[]
   constructor(private router: Router, private api: ApicallService) { 
 
   }
@@ -23,6 +24,12 @@ private getusers(){
     this.users=response.data;
   })
 }
-
-
+private getUserById(id:any){
+  this.api.getUserById(id).subscribe((respo:any)=>{
+    this.ids=respo.data;
+  })  
+}
+public loadPhoto(){
+this.router.navigateByUrl('/id')
+}
 }
