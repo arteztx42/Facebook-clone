@@ -427,7 +427,7 @@
     background-size: cover;
   }
   
-  #photos .tb .tr:nth-child(1) .td:nth-child(1) {
+  /* #photos .tb .tr:nth-child(1) .td:nth-child(1) {
     background-image: url("https://imagizer.imageshack.com/img922/8637/NN4aPj.jpg");
   }
   
@@ -462,7 +462,7 @@
   #photos .tb .tr:nth-child(3) .td:nth-child(3) {
     background-image: url("https://imagizer.imageshack.com/img921/2711/JXSt41.jpg");
   }
-  
+   */
   #k-nm {
     color: #b8b8b8;
     font-size: 15px;
