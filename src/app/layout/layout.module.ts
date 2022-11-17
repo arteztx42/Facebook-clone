@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { PostingComponent } from './posting/posting.component';
 import { DetailedPostComponent } from './detailed-post/detailed-post.component';
 import { PhotosComponent } from './photos/photos.component';
+import { NgModel } from '@angular/forms';
 
 
 
@@ -26,7 +27,6 @@ const routes:Routes =[
 // {path:'posting', component:PostingComponent},
 // {path:'friends', component:FriendsComponent},
 ]
-
 
 @NgModule({
   declarations: [

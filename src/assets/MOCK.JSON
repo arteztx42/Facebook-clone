@@ -1,0 +1,67 @@
+[
+{
+"id":1,
+"email":"george.bluth@reqres.in",
+"first_name":"George",
+"last_name":"Bluth",
+"avatar":"https://reqres.in/img/faces/1-image.jpg",
+"postdata":{
+    "post":"Hi my name is George, blablablab",
+    "pic":"https://images.unsplash.com/photo-1616036740257-9449ea1f6605?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3Vuc2V0JTIwYmVhY2h8ZW58MHx8MHx8&w=1000&q=80",
+    "date":"10/29/2022",
+    "time":"11:11pm",
+    "tag":[2,3],
+    "comments":[{
+        "name":"Sarah",
+        "likes":4,
+        "comment":"WOW NICE DUDE WOW"
+        },
+        {
+            "name":"Steve",
+            "likes":2,
+            "comment":"this is so cool! "
+            },
+            {
+                "name":"Matt",
+                "likes":3,
+                "comment":"This is boring"
+                }
+            ]
+}
+},
+{
+"id":2,
+"email":"janet.weaver@reqres.in",
+"first_name":"Janet",
+"last_name":"Weaver",
+"avatar":"https://reqres.in/img/faces/2-image.jpg"
+},
+{
+"id":3,
+"email":"emma.wong@reqres.in",
+"first_name":"Emma",
+"last_name":"Wong",
+"avatar":"https://reqres.in/img/faces/3-image.jpg"
+},
+{
+"id":4,
+"email":"eve.holt@reqres.in",
+"first_name":"Eve",
+"last_name":"Holt",
+"avatar":"https://reqres.in/img/faces/4-image.jpg"
+},
+{
+"id":5,
+"email":"charles.morris@reqres.in",
+"first_name":"Charles",
+"last_name":"Morris",
+"avatar":"https://reqres.in/img/faces/5-image.jpg"
+},
+{
+"id":6,
+"email":"tracey.ramos@reqres.in",
+"first_name":"Tracey",
+"last_name":"Ramos",
+"avatar":"https://reqres.in/img/faces/6-image.jpg"
+}
+]

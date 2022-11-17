@@ -1,1 +1,34 @@
-<p>photos works!</p>
+
+<!-- <div class="org" (click)="loadPhoto(users)"
+ *ngFor="let user of users"  >
+ 
+ <img src={{user.avatar}}>
+
+    
+    </div> -->
+
+
+
+    <table class="org"  >
+    <!-- <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Email</th>
+            <th scope="col">Avatar</th>
+            <th scope="col">Action</th>
+        </tr>
+   </thead> -->
+      <!-- <img src={{user.avatar}}> -->
+
+      <tbody *ngFor="let user of users">
+        <tr (click)="loadPhoto(user)" [ngClass]="selectedUser.id == user.id ? 'highlight' : ''">
+          <!-- <th style="font-size:25px" scope="row">{{user.id}}</th>
+          <td style="font-size:25px">{{user.first_name}}</td>
+          <td style="font-size:25px">{{user.last_name}}</td>
+          <td style="font-size:25px" >{{user.email}}</td> -->
+          <td><img  src="{{user.avatar}}"></td>
+          
+      </tr>
+      </tbody>

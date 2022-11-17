@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ApicallService } from 'src/app/utils/services/apicall.service';
+import { Input } from '@angular/core';
 
 
 @Component({
@@ -11,8 +12,11 @@ import { ApicallService } from 'src/app/utils/services/apicall.service';
 export class PostingComponent implements OnInit {
 users:any=[]
 ids:any=[]
+selectedUsers:any=[];
    
 public name: string = "Ramandip Singhh";
+
+
 
   constructor(private router: Router, private api: ApicallService) {
 
@@ -24,7 +28,9 @@ public name: string = "Ramandip Singhh";
 
 private getusers(){
   this.api.getUsers().subscribe((response:any)=>{
-    this.users=response.data;
+    this.users=response;
+    this.api.selectedUsers=this.users[0];
+    console.log(response)
   })
 }
 private getUserById(id:any){
@@ -32,7 +38,8 @@ private getUserById(id:any){
     this.ids=respo.data;
   })  
 }
-public loadPhoto(){
-this.router.navigateByUrl('/id')
-}
+// public loadPhoto(user:string){
+//   console.log("this click works!")
+// this.api.selectedUsers=user;
+// }
 }

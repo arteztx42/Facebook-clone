@@ -41,7 +41,7 @@
             <div class="lb-action" id="b-i"><i class="material-icons"></i></div>
           </div> -->
           <!-- <div id="photos"  class="boxes" >
-            <div class="tb" (click)="loadPhoto()">
+            <div class="tb" (click)="">
               <div class="tr" *ngFor="let user of users">
                 <div class="td" ><img src={{user.avatar}}></div> -->
                 <!-- <div class="td"><img src={{user.avatar}}></div>
@@ -65,10 +65,10 @@
                     <div class="lb-action" id="b-i"><i class="material-icons"></i></div>
                 </div>
                 <div>
-                  <div class="tb" (click)="loadPhoto()">
+                  <div class="tb" >
                     <div class="tr">
-                      <div class="td" *ngFor="let user of users" ><img src={{user.avatar}}></div>
-
+                      <div class="td"></div>
+                        <app-photos></app-photos>
                     </div>
                 </div>
               </div>
@@ -160,22 +160,20 @@
             </div>
             <div>
                 <div class="post">
-                    <div class="tb">
+                    <!-- <div class="tb">
                         <a href="#" class="td p-p-pic"><img src="https://imagizer.imageshack.com/img923/2452/zifFKH.jpg" alt="Rajeev's profile pic"></a>
-                        <div class="td p-r-hdr">
-                            <div class="p-u-info">
+                        <div class="td p-r-hdr"> -->
+                            <!-- <div class="p-u-info">
                                 <a href="#">Harman Singh</a> shared a memory with <a href="#">{{name | uppercase}}</a>
-                            </div>
-                            <div class="p-dt">
+                             </div> -->
+                            <!-- <div class="p-dt">
                                 <i class="material-icons">calendar_today</i>
                                 <span>January 28, 2015</span>
-                            </div>
-                        </div>
+                            </div> -->
+                        <!-- </div> -->
                         <div class="td p-opt"><i class="material-icons"></i></div>
                     </div>
-                    <a href="#" class="p-cnt-v">
-                        <img src="https://ramandip-singh.pixels.com/images/artistwebsiteimages/272559-105-1480470292.jpg">
-                    </a>
+                    <app-detailed-post></app-detailed-post>
                     <!-- <a href="#" class="p-cnt-v">
               <img src="https://ramandip-singh.pixels.com/images/artistwebsiteimages/272559-105-1480470292.jpg">
             </a> -->
@@ -184,14 +182,7 @@
               <th style="font-size:25px" scope="row">{{user.id}}</th>
             </tr>
             </div> -->
-                    <div>
-                        Let's see if this works {{users.id}}
-
-                        <tr *ngFor="let user of users">
-                            <th scope="row">{{user.id}}</th>
-
-                        </tr>
-                    </div>
+                   
                     <div>
                         <div class="p-acts">
                             <div class="p-act like"><i class="material-icons"></i><span></span></div>

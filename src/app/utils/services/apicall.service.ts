@@ -1,23 +1,17 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { BehaviorSubject } from 'rxjs';
+import { Observable } from 'rxjs/internal/Observable';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class ApicallService {
+  selectedUsers:any=[];
+  selectedUserBehaviorSubject= new BehaviorSubject("");
   storedData:any=[];
-
-  
-  getUserBy(first_name: any) {
-    throw new Error('Method not implemented.');
-  }
-  getUserByName(first_name: any) {
-    throw new Error('Method not implemented.');
-  }
-  getUserByEmail(email: any) {
-    throw new Error('Method not implemented.');
-  }
+  users:any=[]
 
   constructor(private http: HttpClient) { }
 
@@ -25,7 +19,7 @@ export class ApicallService {
   return this.http.post('http://reqres.in/api/login', params)
   }
   getUsers(){
-    return this.http.get('https://reqres.in/api/users')
+    return this.http.get('../../../assets/MOCK.JSON') 
   }
   getUserById(id:any){
     return this.http.get('https://reqres.in/api/users/'+id)
