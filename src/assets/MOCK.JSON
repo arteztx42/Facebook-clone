@@ -34,34 +34,149 @@
 "email":"janet.weaver@reqres.in",
 "first_name":"Janet",
 "last_name":"Weaver",
-"avatar":"https://reqres.in/img/faces/2-image.jpg"
+"avatar":"https://reqres.in/img/faces/2-image.jpg",
+"postdata":{
+    "post":"This was a trip I took to the ocean! I absolutely loved it!",
+    "pic":"https://media.istockphoto.com/id/467367026/photo/perfect-sky-and-ocean.jpg?s=612x612&w=0&k=20&c=LZYFRxIhuKQom3l-kR3TLN7GikSJYJz9NRglQ3nngBw=",
+    "date":"10/29/2022",
+    "time":"11:40pm",
+    "tag":[5,3],
+    "comments":[{
+        "name":"Sandy",
+        "likes":6,
+        "comment":"NIceeee"
+        },
+        {
+            "name":"Mina",
+            "likes":29,
+            "comment":"OMG YES! "
+            },
+            {
+                "name":"Tina",
+                "likes":35,
+                "comment":"I like this a lot"
+                }
+            ]
+}
 },
 {
 "id":3,
 "email":"emma.wong@reqres.in",
 "first_name":"Emma",
 "last_name":"Wong",
-"avatar":"https://reqres.in/img/faces/3-image.jpg"
+"avatar":"https://reqres.in/img/faces/3-image.jpg",
+"postdata":{
+    "post":"I'm going back every summer! India is my favorite!",
+    "pic":"https://www.planetware.com/wpimages/2020/01/india-in-pictures-beautiful-places-to-photograph-taj-mahal.jpg",
+    "date":"10/29/2022",
+    "time":"11:11am",
+    "tag":[6,1],
+    "comments":[{
+        "name":"Sandra",
+        "likes":60,
+        "comment":"I'm so jealous! "
+        },
+        {
+            "name":"Erin",
+            "likes":290,
+            "comment":"You go Girl! "
+            },
+            {
+                "name":"Ashley",
+                "likes":3,
+                "comment":"I was there last year!"
+                }
+            ]
+}
 },
 {
 "id":4,
 "email":"eve.holt@reqres.in",
 "first_name":"Eve",
 "last_name":"Holt",
-"avatar":"https://reqres.in/img/faces/4-image.jpg"
+"avatar":"https://reqres.in/img/faces/4-image.jpg",
+"postdata":{
+    "post":"I'm posting to represent peace and a spirit of calmness!",
+    "pic":"https://www.incimages.com/uploaded_files/image/1920x1080/getty_542959856_2000133320009280405_365308.jpg",
+    "date":"10/29/2022",
+    "time":"11:11am",
+    "tag":[3,5],
+    "comments":[{
+        "name":"Hank",
+        "likes":10,
+        "comment":"Incredible! "
+        },
+        {
+            "name":"Sean",
+            "likes":290,
+            "comment":"I wish you peace right now! "
+            },
+            {
+                "name":"Kem",
+                "likes":36,
+                "comment":"I needed this!"
+                }
+            ]
+}
 },
 {
 "id":5,
 "email":"charles.morris@reqres.in",
 "first_name":"Charles",
 "last_name":"Morris",
-"avatar":"https://reqres.in/img/faces/5-image.jpg"
+"avatar":"https://reqres.in/img/faces/5-image.jpg",
+"postdata":{
+    "post":"I'm struggling right and this is helping me get through it!",
+    "pic":"http://www.lollydaskal.com/wp-content/uploads/2013/08/Screen-Shot-2018-06-20-at-8.56.06-PM.png",
+    "date":"11/29/2022",
+    "time":"03:30am",
+    "tag":[4,6],
+    "comments":[{
+        "name":"Jana",
+        "likes":1,
+        "comment":"I'm so inspired! "
+        },
+        {
+            "name":"Jen",
+            "likes":29,
+            "comment":"I'm going through the same thing!! "
+            },
+            {
+                "name":"Kendra",
+                "likes":9,
+                "comment":"Keep going!"
+                }
+            ]
+}
 },
 {
 "id":6,
 "email":"tracey.ramos@reqres.in",
 "first_name":"Tracey",
 "last_name":"Ramos",
-"avatar":"https://reqres.in/img/faces/6-image.jpg"
+"avatar":"https://reqres.in/img/faces/6-image.jpg",
+"postdata":{
+    "post":"How I feel all week!",
+    "pic":"https://compote.slate.com/images/7e47327e-d9f7-4c17-a665-c03f548f090f.png",
+    "date":"12/29/2022",
+    "time":"03:30am",
+    "tag":[1,6],
+    "comments":[{
+        "name":"Jake",
+        "likes":11,
+        "comment":"LOL! "
+        },
+        {
+            "name":"Dreamer",
+            "likes":29,
+            "comment":"lol dude he's the funniest!! "
+            },
+            {
+                "name":"Cass",
+                "likes":90,
+                "comment":"my preciussss!!"
+                }
+            ]
+}
 }
 ]
