@@ -9,7 +9,7 @@
 
 
 
-    <table class="org"  >
+    <!-- <table class="org"  > -->
     <!-- <thead>
         <tr>
             <th scope="col">Id</th>
@@ -22,13 +22,15 @@
    </thead> -->
       <!-- <img src={{user.avatar}}> -->
 
-      <tbody *ngFor="let user of users">
-        <tr (click)="loadPhoto(user)" [ngClass]="selectedUser.id == user.id ? 'highlight' : ''">
+      
+      <div  class="row"><ng-container *ngFor="let user of users">
+        <div (click)="loadPhoto(user)" class="col" [ngClass]="selectedUser.id == user.id ? 'highlight' : ''">
           <!-- <th style="font-size:25px" scope="row">{{user.id}}</th>
           <td style="font-size:25px">{{user.first_name}}</td>
           <td style="font-size:25px">{{user.last_name}}</td>
           <td style="font-size:25px" >{{user.email}}</td> -->
-          <td><img  src="{{user.avatar}}"></td>
+          <div><img  src="{{user.avatar}}"></div>
           
-      </tr>
-      </tbody>
+          </div> </ng-container>
+        </div>
+     

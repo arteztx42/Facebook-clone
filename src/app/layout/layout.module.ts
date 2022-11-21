@@ -2,41 +2,31 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LayoutComponent } from './layout.component';
 import { RouterModule, Routes } from '@angular/router';
-import { FriendsComponent } from './friends/friends.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { PostingComponent } from './posting/posting.component';
-import { DetailedPostComponent } from './detailed-post/detailed-post.component';
-import { PhotosComponent } from './photos/photos.component';
-import { NgModel } from '@angular/forms';
-
-
+import { TESTComponent } from '../test/test.component';
+import { UserprofileComponent } from './userprofile/userprofile.component';
 
 
 const routes:Routes =[
   {path:'', component:LayoutComponent, 
   children: [
-  {path:'posting', component:PostingComponent},
-  {path:'friends', component:FriendsComponent},
-  {path:"**", pathMatch:"full", redirectTo:"posting"}
+  {path:"", pathMatch:"full", redirectTo:"userhome"},
+  {path:'userprofile', component:UserprofileComponent},
+  {path:'userhome', loadChildren: () => import('./userhome/userhome.module').then(a=>a.UserhomeModule)}
   ]
 
 
-
 },
-// {path:'posting', component:PostingComponent},
-// {path:'friends', component:FriendsComponent},
 ]
 
 @NgModule({
   declarations: [
     LayoutComponent,
-    FriendsComponent,
     HeaderComponent,
     FooterComponent,
-    PostingComponent,
-    DetailedPostComponent,
-    PhotosComponent
+    TESTComponent,
+    UserprofileComponent
   ],
   imports: [
     CommonModule,

@@ -10,8 +10,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AuthGuardGuard } from './utils/guards/auth-guard.guard';
 import { SignoutGuard } from './utils/guards/signout.guard';
-import { TesttableComponent } from './testtable/testtable.component';
-import { TestpostComponent } from './testpost/testpost.component';
 
 const routes:Routes =[
   {path:'', redirectTo:'login', pathMatch: 'full'},
@@ -29,8 +27,6 @@ const routes:Routes =[
     AppComponent,
     LoginComponent,
     HomepageComponent,
-    TesttableComponent,
-    TestpostComponent
   ],
   imports: [
     BrowserModule,
